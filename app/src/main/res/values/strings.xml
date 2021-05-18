@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Anti-Boredom App</string>
+
+    <string name="type">Type: </string>
+    <string name="no_part">Num. of Participants: </string>
+    <string name="pricing">Price: </string>
+    <string name="Link">Link: </string>
+    <string name="prep">Preparation Level: </string>
+    <string name="url">Research it Online!</string>
+
+    <string name="lvl_quick">Quick</string>
+    <string name="lvl_med">Medium</string>
+    <string name="lvl_high">Long</string>
+
+    <string name="form_title">Set your own preferences!</string>
+
+    <string name="last_act">Last activities found: </string>
+
+    <string name="tab_name1">New Activity</string>
+    <string name="tab_name2">Search with Form</string>
+
+    <string name="but_submit">Submit</string>
+    <string name="but_findNewAct">Find a New Activity Now!</string>
+    <string name="tryAgain">Try Again!</string>
+
+    <string name="clear">Clear Note</string>
+    <string name="clear_act">Delete Activity</string>
+    <string name="saved_act">Saved Activities: </string>
+    <string name="holder">-----</string>
+
+    <string name="menu_color">Change Color Theme</string>
+    <string name="menu_new_research">New Research</string>
+    <string name="menu_saved_app">Saved Activities</string>
+    <string name="menu_app_info">Application Info</string>
+
+    <string name="toast_display">Added to favorites</string>
+    <string name="toast_error">The activity is already saved</string>
+
+    <string name="dialogTitle">App Info</string>
+    <string name="authorName">Alexandra Mormontoy</string>
+
+    <string name="fab_desc">Floating Button here</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

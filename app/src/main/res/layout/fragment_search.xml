@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/submit_reg_form"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="@string/but_findNewAct"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerMain"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_margin="30dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:text="@string/last_act"
+            android:textColor="@color/darkGreen"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/last1"
+            android:text="@string/holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/last2"
+            android:text="@string/holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"/>
+
+        <TextView
+            android:id="@+id/last3"
+            android:text="@string/holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

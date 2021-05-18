@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormSearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:text="@string/form_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45sp"
+            android:textColor="@color/darkGreen"
+            android:layout_margin="15dp"/>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/type"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/type"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/no_part"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/no_parts"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pricing"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"/>
+
+                <SeekBar
+                    android:id="@+id/priceSeeker"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:max="10"
+                    android:theme="@style/MySeekBar"
+                    android:thumbTint="@color/green" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prep"
+            android:layout_margin="10dp"
+            android:textSize="20sp"/>
+
+        <RadioGroup
+            android:id="@+id/prepRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <RadioButton
+                android:id="@+id/prep_radio1"
+                android:text="@string/lvl_quick"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/green"/>
+            <RadioButton
+                android:id="@+id/prep_radio2"
+                android:text="@string/lvl_med"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/green"/>
+            <RadioButton
+                android:id="@+id/prep_radio3"
+                android:text="@string/lvl_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/green"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_form"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green"
+            android:text="@string/but_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</FrameLayout>

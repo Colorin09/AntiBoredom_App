@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/parent_layout">
+
+    <TextView
+        android:id="@+id/fav_activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackGreen"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/no_part" />
+
+            <TextView
+                android:id="@+id/fav_no_parts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pricing"/>
+
+            <TextView
+                android:id="@+id/fav_no_price"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:gravity="right" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="@string/prep" />
+
+            <TextView
+                android:id="@+id/fav_prep"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/fav_link_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Link"/>
+
+            <TextView
+                android:id="@+id/fav_link"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="@string/holder"
+                android:gravity="right"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <EditText
+        android:id="@+id/fav_note"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_box_style"
+        android:layout_marginTop="10dp"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:hint="  Enter a note..."
+        android:padding="5dp"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/fav_delete_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/skyblue"
+            android:backgroundTint="@color/white"/>
+
+        <Button
+            android:id="@+id/fav_delete_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_act"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/red"
+            android:backgroundTint="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>
